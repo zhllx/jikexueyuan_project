@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(../images/bg0.jpg) center top no-repeat;
+	background-size:cover;
+}
+.s-top-wrap{
+	background: rgba(0, 0, 0, 0) linear-gradient(rgba(15, 25, 50, 0.3) 0px, rgba(15, 25, 50, 0.3) 100%) repeat;
+    border: none;
+}
+.leftTop a{
+	color: #fff;
+}
+nav ul li a{
+	color: #fff;
+}
+nav ul li a:hover {
+	color: #fff;
+}
+.login-bnt .drop-down a{
+	color:#555;
+}
