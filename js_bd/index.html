@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<!--
+    @require index.css
+    @require index.js
+    @require "jquery.min.js"
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <!--全局清除-->
+    <div class="clear"></div>
+    <!--顶部导航栏-->
+    <div class="more-menu">
+        <input id="int" class="int" type="button" value="更多产品" />
+        <div class="menu-father">
+            <div class="menu-header">
+                <span>更多产品</span>
+            </div>
+            <div class="menu">
+                <img src="./static/img/music.png">
+                <a href="#">音乐</a>
+            </div>
+            <div class="menu">
+                <img src="./static/img/image.png">
+                <a href="#">图片</a>
+            </div>
+            <div class="menu">
+                <img src="./static/img/zhidao.png" />
+                <a href="#">知道</a>
+            </div>
+            <div class="menu">
+                <img src="./static/img/wenku.png">
+                <a href="#">文库</a>
+            </div>
+            <div class="menu">
+                <img src="./static/img/bang.png" />
+                <a href="#">风云榜</a>
+            </div>
+            <div class="menu">
+                <img src="./static/img/tuiguang.png" />
+                <a href="#">百度推广</a>
+            </div>
+            <div class="menu-footer">
+                <a href="#">全部产品>></a>
+            </div>
+        </div>
+    </div>
+    <div id="nav-set" class="nav nav-where">
+        <div class="navbar navbar-where">
+            <a class="set" href="#">设置</a>
+            <div id="search-set" class="navbar-down-menu">
+                <img src="./static/img/jiantou.png" />
+                <div class="navbar-down">
+                    <div class="down">搜索设置</div>
+                    <div class="down">高级搜索</div>
+                    <div class="down">关闭预测</div>
+                    <div class="down">搜索历史</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav-user" class="nav">
+        <div class="navbar">
+            <a class="user" href="#">郭鑫</a>
+            <div id="user-down" class="navbar-down-menu">
+                <img src="./static/img/jiantou.png" />
+                <div class="navbar-down">
+                    <div class="down">我的vip</div>
+                    <div class="down">个人中心</div>
+                    <div class="down">账号设置</div>
+                    <div class="down">意见反馈</div>
+                    <div class="down">退出</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navbar">
+            <a href="#"><b>贴吧</b></a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navbar">
+            <a href="#"><b>视频</b></a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navbar">
+            <a href="#"><b>地图</b></a>
+        </div>
+    </div>
+    <div class="nav nav-where">
+        <div class="navbar">
+            <a href="#"><b>hao123</b></a>
+        </div>
+    </div>
+    <div class="nav nav-where">
+        <div class="navbar">
+            <a href="#"><b>新闻</b></a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navbar">
+            <a href="#"><b>糯米</b></a>
+        </div>
+    </div>
+    <!--中心内容-->
+    <div class="content">
+        <img class="logo" src="./static/img/bdlogo.png" />
+        <form class="content-form">
+            <input class="search" type="text" autofocus="autofocus" />
+            <input class="sure" type="button" value="百度一下" />
+        </form>
+        <div class="article">
+            <div>
+                <button id="user-btn1" class="user-btn1"><img src="./static/img/user.png">我的关注</button>
+                <button id="user-btn2" class="user-btn2">推荐</button>
+                <button id="user-btn3" class="user-btn2">导航</button>
+                <button id="user-btn4" class="user-btn2">视频</button>
+                <button id="user-btn5" class="user-btn2">购物</button>
+                <div class="user-set"><img id="config" src="./static/img/config.png"><img id="config2" src="./static/img/config2.png"></div>
+            </div>
+            <div>
+                <!--我的关注中的我的导航等内容-->
+                <div class="myattention">
+                    <div class="mynav">
+                        <img src="./static/img/mynavright.png" /><span>我的导航（0）</span>
+                        <p class="mynav-p2">置顶</p>
+                        <p class="mynav-p1">返利模式</p>
+                        <p class="mynav-p1">添加</p>
+                    </div>
+                    <div class="user-defined clear"><img src="./static/img/plus.png" /><span>自定义</span></div>
+                </div>
+                <!--推荐-->
+                <div class="mygroom">
+                    <div class="groom">
+                        <h5><img src="./static/img/baidu.png"/>以下信息根据您的兴趣爱好推荐</h5>
+                        <div class="groom-article">
+                            <h4><img src="./static/img/hot.png"/>北航副校长张广军出任东南大学校长，原校长易红转任党委书记</h4>
+                            <p>网易新闻 11-23 16:59</p>
+                        </div>
+                        <div class="groom-article groom-style-plus">
+                            <h4><img src="./static/img/hot.png"/>美女编辑晒胃照走红 网友：胃好颜值<br/><br/>就好<img class="news-img" src="./static/img/news.jpg"/></h4>
+                            <p class="groom-p">网易新闻 11-23 16:59</p>
+                        </div>
+                    </div>
+                    <div class="true-time">
+                        <h4>实时新闻</h4>
+                        <ul>
+                            <li><a href="#">范冰冰为李晨庆生</a></li>
+                            <li><a href="#">昆凌谈产后经历</a></li>
+                            <li><a href="#">美女编辑晒为走红</a></li>
+                            <li><a href="#">幽灵船漂浮至日本</a></li>
+                            <li><a href="#">靖国神社发生爆照</a></li>
+                            <li><a href="#">灵芝重大70公斤</a></li>
+                            <li><a href="#">陈奕迅回应尽力</a></li>
+                            <li><a href="#">女子连生15女儿</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">母亲蜷缩汽车尾箱</a></li>
+                            <li><a href="#">男子选丑大赛夺冠</a></li>
+                            <li><a href="#">大二女生宿舍猝死</a></li>
+                            <li><a href="#">穿着暴露拜佛被骂</a></li>
+                            <li><a href="#">30吨米烧成熟饭</a></li>
+                            <li><a href="#">官微被曝发不雅照</a></li>
+                            <li><a href="#">泰森死敌被暴揍</a></li>
+                            <li><a href="#">港姐冠军卖鱼蛋</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--导航-->
+                <div class="web-site">
+                    <h4><b>猜你喜欢</b></h4>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/nuomi.jpg" /><span>百度糯米</span>
+                        <div class="banner">
+                            <a href="#">最高返利3.54%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/jd.jpg" /><span>京东商城</span>
+                        <div class="banner">
+                            <a href="#">最高返利80.00%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/1hao.jpg" /><span>1号店</span>
+                        <div class="banner">
+                            <a href="#">最高返利81.00%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/suning.jpg" /><span>苏宁易购</span>
+                        <div class="banner">
+                            <a href="#">最高返利80.00%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/vip.gif" /><span>唯品会</span>
+                        <div id="ban5" class="banner">
+                            <a href="#">最高返利7.50%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article">
+                        <img class="web-site-img2" src="./static/img/fan.png">
+                        <img class="web-site-img1" src="./static/img/dangdang.jpg" /><span>当当网</span>
+                        <div class="banner">
+                            <a href="#">最高返利84.00%</a>
+                        </div>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>千图网</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>W3csho...</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>百度网盘</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>jquery</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>谷歌</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>腾讯视频</span>
+                    </div>
+                    <div class="web-site-article web-site-only-stlye">
+                        <img class="web-site-img1" src="./static/img/e.jpg" /><span>当当网</span>
+                    </div>
+                </div>
+                <!--视频-->
+                <div class="mymovie">
+                    <div class="movie">
+                        <img src="./static/img/movie1.jpeg" />
+                        <span>94:27</span>
+                        <a href="#">城市猎人</a>
+                    </div>
+                    <div class="movie">
+                        <img src="./static/img/movie2.jpeg" />
+                        <span>更新至42集</span>
+                        <a href="#">云中歌</a>
+                    </div>
+                    <div class="movie-2">
+                        <img src="./static/img/movie2_1.jpeg" />
+                        <span>06:18</span>
+                        <a href="#">美女试驾宝马4系 Gran Couple测评</a>
+                    </div>
+                    <div class="movie-2">
+                        <img src="./static/img/movie2_2.jpeg" />
+                        <span>00:24</span>
+                        <a href="#">爆笑国外创意广告 宝马美女惊人举动</a>
+                    </div>
+                    <div class="movie-2">
+                        <img src="./static/img/movie2_3.jpeg" />
+                        <span>01:49</span>
+                        <a href="#">两男子打架引出奸杀案 嫌疑人指认现场被吓瘫</a>
+                    </div>
+                    <div class="movie-2">
+                        <img src="./static/img/movie2_4.jpeg" />
+                        <span>01:41</span>
+                        <a href="#">中国黑户人口超1300万 公安部高层议对策</a>
+                    </div>
+                </div>
+                <!--购物-->
+                <div class="mybuy">
+                    <div class="buy">
+                        <img src="./static/img/buy1.jpg" />
+                        <a href="#">心灵鸡汤198元代金</a>
+                        <span>￥132</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy2.jpg" />
+                        <a href="#">聚美彩妆美甲套餐</a>
+                        <span>￥19.9</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy3.jpg" />
+                        <a href="#">郷厨才煮100元代金</a>
+                        <span>￥88</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy4.jpg" />
+                        <a href="#">江记泰式无骨风爪</a>
+                        <span>￥39.5</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy5.jpg" />
+                        <a href="#">乐客港式快餐店单人</a>
+                        <span>￥9.8</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy6.jpg" />
+                        <a href="#">水忆方台球白天场套餐</a>
+                        <span>￥9.4</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy7.jpg" />
+                        <a href="#">麻辣小屋100元代金</a>
+                        <span>￥79.6</span>
+                    </div>
+                    <div class="buy">
+                        <img src="./static/img/buy8.jpg" />
+                        <a href="#">华莱士双人套餐</a>
+                        <span>￥22.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部信息-->
+    <div class="footer">
+        <a href="#">设为首页</a>
+        <span>©2015Baidu</span>
+        <a href="#">使用百度前必读</a>
+        <a href="#">意见反馈</a>
+        <span>京ICP证030173号</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,625 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./static/img/bg.jpg?__inline);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.clear {
+    clear: both;
+}
+
+.more-menu {
+    float: right;
+    width: 90px;
+    height: 100%;
+}
+
+.int {
+    width: 100%;
+    height: 4.5%;
+    border: none;
+    background-color: #1386f1;
+    color: #ffffff;
+}
+
+.menu-father {
+    width: 99%;
+    height: 100%;
+    background-color: #f8f7f7;
+    border-left: 1px solid #cfcfcf;
+    display: none;
+}
+
+.menu {
+    width: 80%;
+    height: 10%;
+    border-bottom: 1px solid #cfcfcf;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu img {
+    margin: 10px 25%;
+}
+
+.menu a {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+}
+
+.menu-header {
+    width: 80%;
+    height: 8%;
+    border-bottom: 1px solid #cfcfcf;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu-header span {
+    position: relative;
+    top: 20px;
+}
+
+.menu-footer {
+    width: 80%;
+    height: 5%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.menu-footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav {
+    width: 50px;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/*单独为设置和更多产品设置外边距*/
+
+.nav-where {
+    margin-right: 15px;
+}
+
+.navbar {
+    margin-top: 5px;
+    height: 3%;
+    line-height: 25px;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar-down-menu {
+    position: relative;
+    top: -8px;
+    display: none;
+}
+
+
+/*设置下拉菜单整体的大小和位置*/
+
+.navbar-down {
+    width: 60px;
+    position: relative;
+    right: 5px;
+    top: -15px;
+}
+
+
+/*定义下拉菜单具体的样式*/
+
+.down {
+    font-size: 12px;
+    width: 65px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.down:hover {
+    background-color: #1386f1;
+    color: #ffffff;
+}
+
+
+/*百度LOGO*/
+
+.logo {
+    width: 270px;
+    height: 129px;
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: 40px;
+}
+
+
+/*设置搜索框和百度一下按钮的位置*/
+
+.content-form {
+    position: absolute;
+    left: 50%;
+    margin-left: -305.5px;
+    margin-top: 189px;
+}
+
+.search {
+    width: 500px;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    vertical-align: middle;
+}
+
+.sure {
+    height: 39px;
+    width: 100px;
+    border: none;
+    background-color: #ededed;
+    vertical-align: middle;
+    color: #000000;
+    margin-left: -5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+
+/*内容栏的样式*/
+
+.article {
+    width: 870px;
+    height: 350px;
+    background-color: #f7f6f6;
+    position: absolute;
+    top: 278px;
+    left: 50%;
+    margin-left: -435px;
+    opacity: 0.95;
+}
+
+.user-btn1 {
+    width: 115px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+    top: -1px;
+}
+
+.user-btn1 img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.user-btn1:hover {
+    background-color: #6e6e6e;
+}
+
+.user-btn2 {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top: -1px;
+    margin-left: -5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.user-btn2:hover {
+    background-color: #6e6e6e;
+}
+
+.user-set {
+    width: 439px;
+    height: 39px;
+    background-color: #ffffff;
+    float: right;
+    border-bottom: 1px solid #dbdbdb;
+    position: relative;
+    top: -1px;
+}
+
+.user-set img {
+    float: right;
+    margin-top: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/*JS触发事件更换的样式*/
+
+.btn-jsstyle {
+    background-color: #c9c9c9;
+}
+
+
+/*我的关注中的我的导航*/
+
+
+/*点击我的关注时display*/
+
+.myattention {
+    display: none;
+}
+
+.mynav {
+    width: 830px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid #ffffff;
+    cursor: pointer;
+}
+
+.mynav span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.mynav img {
+    width: 10px;
+    height: 10px;
+}
+
+.mynav p {
+    display: none;
+    font-size: 14px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.mynav-p2 {
+    color: #9f9f9f;
+}
+
+.mynav-p1:hover {
+    color: #0772f6;
+}
+
+.user-defined {
+    width: 830px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px auto;
+}
+
+.user-defined span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.user-defined img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/*推荐内样样式*/
+
+.groom {
+    width: 502px;
+    /*宽度理论加上外边距是article的60%*/
+    height: 290px;
+    /*    background-color: red;*/
+    margin-left: 20px;
+    /*    margin-top: 10px;*/
+    float: left;
+}
+
+.groom h5 {
+    text-align: center;
+    color: #a8a8a8;
+}
+
+.groom h5 img {
+    vertical-align: middle;
+}
+
+.groom-article {
+    width: 482px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid #ffffff;
+}
+
+.groom-article h4 {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.groom-article h4:hover {
+    color: #116bf2;
+    text-decoration: underline;
+}
+
+.groom-article h4 img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.groom-article p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #505050;
+    cursor: pointer;
+}
+.groom-p{
+    position: relative;
+    margin-top: -5px;
+}
+
+/*为第二个推荐板块增加高度*/
+
+.groom-style-plus {
+    height: 130px;
+}
+
+.news-img {
+    width: 176px;
+    height: 106px;
+    float: right;
+    position: relative;
+    top: -30px;
+}
+
+.groom-style-plus p {
+    position: relative;
+    top: 30px;
+}
+
+.true-time {
+    float: left;
+    width: 308px;
+    height: 290px;
+    margin-left: 20px;
+}
+
+.true-time ul {
+    margin-left: -20px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 2px;
+}
+
+.true-time ul li {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.true-time ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.true-time ul li a:hover {
+    color: #116bf2;
+    text-decoration: underline;
+}
+
+/*导航内容样式*/
+
+.web-site {
+    display: none;
+}
+
+.web-site h4 {
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.web-site-article {
+    width: 120px;
+    height: 60px;
+    background-color: #dedede;
+    margin-left: 21px;
+    float: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.web-site-img1 {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.web-site-img2 {
+    float: right;
+}
+
+.web-site-article span {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.banner {
+    width: 120px;
+    height: 18px;
+    background-color: #fa521e;
+    position: relative;
+    top: -15px;
+    display: none;
+}
+
+.banner a {
+    font-size: 12px;
+    margin-left: 25px;
+    color: #ffffff;
+}
+
+.banner:hover {
+    background-color: #f82b10;
+}
+
+.web-site-only-stlye {
+    margin-top: 20px;
+}
+
+
+/*视频内容样式*/
+
+.mymovie {
+    display: none;
+}
+
+.movie a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.mymovie a:hover {
+    color: #1f69ff;
+    text-decoration: underline;
+}
+
+.mymovie span {
+    float: right;
+    position: relative;
+    top: -20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.movie {
+    width: 195px;
+    height: 290px;
+    background-color: #e5e5e5;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 195px;
+    height: 250px;
+}
+
+.movie-2 {
+    width: 195px;
+    height: 140px;
+    background-color: #e5e5e5;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.movie-2 a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+
+
+/*购物内容样式*/
+.mybuy{
+    display: none;
+}
+.buy {
+    width: 202px;
+    height: 143px;
+    margin-left: 12.5px;
+    margin-top: 10px;
+    float: left;
+}
+
+.buy img {
+    width: 202px;
+    height: 123px;
+    cursor: pointer;
+}
+
+.buy a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.buy a:hover {
+    color: #1f69ff;
+    text-decoration: underline;
+}
+
+.buy span {
+    float: right;
+    color: #ff1919;
+    font-weight: bold;
+}
+.footer{
+    position: relative;
+    top: 90%;
+    margin-left: 35%;
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer  a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer  a:hover{
+    text-decoration: underline;
+}
+.footer a,span{
+    margin-left: 5px;
+}
+#config2{
+   display: none;
+}
