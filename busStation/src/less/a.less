@@ -1,0 +1,115 @@
+@charset'utf-8';
+@bcolor: #aaadb4; //背景白色
+@b_1color: #c02b31; //背景
+@acolor: #158056;
+@a_1color: #25292a;
+@a_2color: #fff;
+@var: 20px;
+p,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.seclectColor(@bcolor: #aaadb4) {
+    background-color: @bcolor;
+}
+
+.fontSize(@fcolor, @font-size) {
+    color: @fcolor;
+    font-size: @font-size;
+}
+
+.fd() {
+    clear: both;
+}
+
+.page {
+    width: 700px;
+    height: 350px;
+    .seclectColor;
+    margin: 100px auto;
+    position: relative;
+    .hd {
+        .fd();
+        position: relative;
+        width: 700px;
+        height: 100px;
+    }
+    .left {
+        .fontSize(@a_2color, 70px);
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        float: left;
+    }
+    .right {
+        width: 500px;
+        height: 100px;
+        float: left;
+        text-align: center;
+        p:nth-child(1) {
+            .fontSize(@b_1color, 50px);
+        }
+        p:nth-child(2) {
+            .fontSize(@acolor, 20px);
+            span {
+                display: inline-block;
+                width: 30px;
+                border: 1px solid @acolor;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.bd {
+    .seclectColor(@acolor);
+    width: 700px;
+    height: 200px;
+    .fd();
+    ul {
+        list-style: none;
+        li {
+            width: 15px;
+            height: 180px;
+            margin: 10px 4px;
+            float: left;
+            .fontSize(@a_2color, 20px);
+            text-align: justify;
+            vertical-align: middle;
+            &:nth-child(1) {
+                font-weight: 700;
+                .fontSize(#e34333, 20px);
+            }
+        }
+    }
+}
+
+.ft {
+    .fontSize(@b_1color, 20px);
+    font-weight: 700;
+    width: 700px;
+    height: 50px;
+    .sj {
+        width: 600px;
+        height: 30px;
+        &>span:nth-child(1) {
+            display: inline-block;
+            width: 550px;
+            height: 20px;
+            .seclectColor(@b_1color);
+            float: left;
+        }
+        &>span:nth-child(2) {
+            display: inline-block;
+            border-width: 18px;
+            border-style: solid;
+            border-color: transparent transparent transparent @b_1color;
+            float: left;
+            margin-top: -9px;
+        }
+    }
+}
